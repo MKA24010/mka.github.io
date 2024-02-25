@@ -1,0 +1,348 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+html{
+  height: 100%;
+}
+body{
+  max-width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+/*----------HEADER----------*/
+.logo {
+  text-align: center;
+  color: #1E4BFF;
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 67px;
+  margin: 2px auto;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.headercontainer {
+  width: 100%;
+  background-color: #0043FF;
+  font-family: 'Montserrat' , sans-serif;
+  list-style: none;
+  padding-top: none;
+  padding-bottom: none;
+  display: flex;
+  margin-bottom: 10px;
+
+}
+.headercontainer ul{
+  list-style: none;
+}
+
+
+.headercontainer ul li {
+  margin-left: none;
+  left: 0;
+  font-weight: bold;
+  display: inline;
+  justify-content: space-around;
+}
+.headercontainer ul li a {
+  font-family: 'Montserrat' , sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+.headercontainer ul li a:hover{
+  background-color: white;
+  color: #1E4BFF;
+  border-radius: 3px;
+}
+.showNav {
+  margin: 4px 2px;
+  padding: 10px 10px 10px 10px;
+  color: white;
+    border-radius: 3px;
+  transition: 0.3s ease;
+}
+.showNav:hover {
+  background: white;
+  color: #1E4BFF;
+}
+.showNavHolder {
+  margin: auto 8px;
+}
+
+/*--------HEADER END--------*/
+
+.sidenav {
+  font-family: 'Montserrat' , sans-serif;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: ghostwhite;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  margin-right: 0;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #3A78FF;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Montserrat' , helectiva;
+}
+
+.sidenav a:hover {
+  color: white;
+  background-color: #3A71FF;
+  border: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  border-radius: 36px;
+}
+.abouti{
+  margin-right: 16px;
+}
+.sidenav i {
+  border: solid 2px #0043FF;
+  border-radius: 50%;
+  padding: 9px;
+  margin: 15px;
+}
+.sidenav i:hover {
+  border: solid 2px ghostwhite;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-width: 765px) {
+  .sidenav {
+  padding-top: 15px;
+  width: 0;
+  margin: 0;
+}
+  .sidenav a {
+  font-size: 18px;
+  }
+
+}
+.footer{
+  width: 100%;
+  background-color: #3A78FF;
+  padding: 30px 0px 0px 0px;
+  margin-top: auto;
+}
+.innerfooter{
+  display: grid;
+  flex: column;
+}
+.links{
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.link {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-decoration: none;
+  justify-content: between;
+  display: inline-block;
+  font-weight: 600;
+  padding: 0 9px;
+  transition: all 0.4s ease;
+  font-size: 14px;
+
+}
+.link:hover {
+  text-decoration: underline;
+  color: ghostwhite;
+}
+.copyright{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-decoration: none;
+  justify-content: between;
+  display: inline-block;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 11px;
+  background-color: #0043FF;
+  padding: 14px 0px;
+  font-size: 11px;
+}
+
+.slant {
+  width: 100%;
+  height: 250px;
+  background-color: #FFA100;
+  transform-origin: top left;
+  position: relative;
+
+}
+.slanted {
+  width: 100%;
+  height: 250px;
+  background-color: #FFA100;
+  margin-top: -250px;
+  transform: skewY(5deg);
+  transform-origin: top left;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.pageheading {
+  text-align: center;
+  color: white;
+  border: solid 4px ghostwhite;
+  margin: 30px auto;
+  font-family: 'Montserrat', sans-serif;
+  padding: 9px;
+  font-size: 35px;
+  font-weight: bolder;
+}
+.about {
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+
+}
+.dummytext {
+  display: inline-flex;
+  margin: 80px 50px 80px 10px;
+}
+.bottomtext {
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 20px;
+  margin: 20px 10px 0 20px;
+  vertical-align: middle;
+  padding: 20px
+}
+@media screen and (max-width:768px) {
+  .dummytext {
+    display: block;
+  }
+}
+@media screen and (min-width:1250px) {
+  .dummytext {
+    margin: 170px 100px 170px 10px;
+  }
+}
+.slant2 {
+  width: 100%;
+  height: 250px;
+  background-color: #6DFFFF;
+  position: relative;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.slanted2 {
+  width: 100%;
+  height: 250px;
+  margin-top: -250px;
+  background-color: #6DFFFF;
+  transform: skewY(-5deg);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin: bottom left;
+
+}
+.generallink {
+  text-decoration: underline;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.5s ease;
+}
+.generallink:hover {
+  color: orange;
+}
+.generaltext-black {
+  color: black;
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 20px;
+  margin:auto;
+}
+.generaltext-white {
+  color: white;
+  font-family: 'Montserrat' , sans-serif;
+}
+.html-atom {
+  height: 149px;
+  width: 300.5px;
+}
+.html-blog {
+  height: 149px;
+  width: 300.5px;
+  float: right;
+  margin:auto;
+
+}
+.secondslant {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 10px;
+  width: 100%;
+}
+@media screen and (max-width:760px) {
+  .slant2 {
+    display: block;
+  }
+  .generaltext-black {
+    margin:0;
+  }
+  .html-blog {
+    margin: 5px;
+    float: right;
+  }
+}
+.refresh {
+  background: lightblue;
+  color: black;
+  border: none;
+  margin-bottom: 5px;
+  padding: 5px;
+  width: 90%;
+  font-weight: 600;
+}
+.refreshBox {
+  padding: none;
+  margin: 0 0 6px 0;
+  width: 100%;
+  justify-content: space-between;
+}
+.refreshCancel {
+  color: black;
+  width: 10%;
+  font-weight: 600;
+  background: lightblue;
+  padding: 5px;
+}
+@media screen and (max-width:765px) {
+  .secondslant {
+    display: block;
+  }
+  .generaltext-black {
+    margin:auto;
+  }
+  .html-blog {
+    margin: 5px;
+    float: right;
+  }
+}
